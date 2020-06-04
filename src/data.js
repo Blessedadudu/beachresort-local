@@ -17,7 +17,7 @@ import img12 from "./images/room-12.jpeg";
 
 export default [
   {
-    sys: {
+    sys: { 
       id: "1"
     },
     fields: {

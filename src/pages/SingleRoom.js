@@ -9,7 +9,7 @@ export default class SingleRoom extends Component {
   constructor(props) {
     super(props);
     // console.log(this.props);
-    this.state = {
+    this.state = { 
       slug: this.props.match.params.slug,
       defaultBcg
     };
@@ -67,8 +67,7 @@ export default class SingleRoom extends Component {
               <h6>price : ${price}</h6>
               <h6>size : ${size} SQFT</h6>
               <h6>
-                max capacity :{" "}
-                {capacity > 1 ? `${capacity} people` : `${capacity} person `}
+                max capacity : {capacity > 1 ? `${capacity} people` : `${capacity} person `} 
               </h6>
               <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
               <h6>{breakfast && "free breakfast included"}</h6>

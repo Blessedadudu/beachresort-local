@@ -54,7 +54,7 @@ h6 {
 }
 
 .btn-primary {
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: var(--mainBlack);
@@ -380,7 +380,7 @@ h6 {
 .single-room-info {
   width: 80vw;
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   margin: 2rem auto;
 }
 .desc,
@@ -422,7 +422,7 @@ h6 {
   .single-room-images,
   .single-room-info,
   .room-extras {
-    width: 95vw;
+    width: 95vw; 
     max-width: 1170px;
   }
   .single-room-info {

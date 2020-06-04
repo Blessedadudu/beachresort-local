@@ -51,7 +51,9 @@ class RoomProvider extends Component {
     // this.getData();
     let rooms = this.formatData(items);
     let featuredRooms = rooms.filter(room => room.featured === true);
-    let maxPrice = Math.max(...rooms.map(item => item.price));
+    let maxPrice = Math.max(...rooms.map(item => item.price)); 
+
+
     let maxSize = Math.max(...rooms.map(item => item.size));
     this.setState({
       rooms,
@@ -76,6 +78,7 @@ class RoomProvider extends Component {
   }
   getRoom = slug => {
     let tempRooms = [...this.state.rooms];
+    console.log(tempRooms);
     const room = tempRooms.find(room => room.slug === slug);
     return room;
   };
